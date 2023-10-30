@@ -52,21 +52,22 @@
     <div class="container">
         
         <h1>MajorAssignment-2</h1>
-        <h2> Annie Gibian</h2>
-        <h3>Massachussets Population in the year of 1980
+        <h3> Annie Gibian</h3>
+
+        <h1>Massachussets Population in the year of 1980
             <div class="text-align"></div>
-        </h3>
+        </h1>
         <div class ="fig1"></div>
         
-        <h4>Massachussetts Population between 2000 to 2010
+        <h1>Massachussetts Population between 2000 to 2010
             <div class="text-align"></div>
-        </h4>
+        </h1>
 
         <div class ="fig2"></div>
 
-        <h5>Coloring the Massachussets Map by the County
+        <h1> Coloring the Massachussets Map by the County
             <div class="text-align"> </div>
-        </h5>
+        </h1>
 
         <div class = "fig3"></div>
 
@@ -266,7 +267,7 @@
                     tooltip2.transition()
                         .duration(200)
                         .style("opacity", .9)
-                    tooltip2.html(d['properties']['POPCH00_10'])
+                    tooltip2.html(d['properties']['TOWN'])
                         .style("left", m.clientX + "px")
                         .style("top", m.clientY + "px");
                 })
@@ -353,7 +354,7 @@
                         .style("opacity", .9)
                     tooltip3.html(get_additionalData(d['properties']['FIPS_STCO']))
                         .style("left", m.clientX + "px")
-                        .style("top", m.clientY+1100 + "px");
+                        .style("top", m.clientY+600+ "px");
                 })
                 .on("mousemove", (m, d) => {
                     tooltip3.style("opacity", .9)
